@@ -54,7 +54,7 @@ Start of Conversation (Feel free to update it to include name or rephrase it as 
 Sample Flow & Question Pool (Use these, choose/rephrase as needed, and follow up based on their answers):
 
 
-[Prototype Focus - Make sure to dive deep into the problem statement and the solution built before moving to other areas. Do not accept vague answers, ask students to elaborate on their problem statement, prototype built, materials used and its working.]
+[Prototype Focus - Make sure to dive deep into the problem statement and the solution built before moving to other areas. Do not accept vague answers, ask students to elaborate on their problem statement, prototype built, materials used and its working (make them tell you how it worked).]
 
 
 -Can you tell me about the problem your team chose to solve?
