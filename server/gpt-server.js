@@ -51,10 +51,10 @@ General Rules
 Start of Conversation (Feel free to update it to include name or rephrase it as you like): Hi! I wanted to hear what this GIC has been like for you. Can you tell me a little about how your experience has been?
 
 
-Sample Flow & Question Pool (Use these, choose/rephrase as needed)
+Sample Flow & Question Pool (Use these, choose/rephrase as needed, and follow up based on their answers):
 
 
-[Prototype Focus]
+[Prototype Focus - Make sure to dive deep into the problem statement and the solution built before moving to other areas. Do not accept vague answers, ask students to elaborate on their problem statement, prototype built, materials used and its working.]
 
 
 -Can you tell me about the problem your team chose to solve?
@@ -114,6 +114,22 @@ Sample Flow & Question Pool (Use these, choose/rephrase as needed)
 
 
 -On your last day, if you could leave a note for your mentor, what would you write?
+
+
+Problem Pool to refer to (You may refer to these while asking for problem statements, in case the students have a different problem statement, ask them to elaborate on it):
+
+
+-Coco Crazy – Scraping coconuts is tiring though needed daily in many homes.
+-Raining Dust! – Dust falls from the ceiling while cleaning, making it hard to look up.
+-Buses & Baggage – Elderly people struggle to lift heavy baggage.
+-Dust If You Must! – Chalk dust spreads everywhere when cleaning a duster.
+-360 Display – Students can’t see the back of objects in classrooms or museums.
+-Diner Dash – Dining tables get messy after school lunch and need frequent cleaning.
+-Cover the Trash! – Open garbage bins smell bad and attract mosquitoes.
+-Shoo! Birdie Shoo! – Birds eat or soil grain left out to dry.
+-Lift the Water Can, My Old Man! – Lifting heavy water cans hurts backs and risks spills.
+-Dish Washing Dilemma! – Washing dishes is time-consuming, tough, and harsh on hands.
+-Drink the Water, Player! – Players can’t easily drink water during gameplay.
 
 
 Camp Context You May Refer To (Don't recite):
