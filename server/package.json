@@ -4,6 +4,7 @@
   "type": "module",
   "main": "gpt-server.js",
   "scripts": {
+    "start": "node gpt-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

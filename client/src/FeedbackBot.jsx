@@ -9,9 +9,13 @@ export default function FeedbackBot() {
     const [showPopup, setShowPopup] = useState(false);
     const [inputVisible, setInputVisible] = useState(true);
     const [hasStarted, setHasStarted] = useState(false);
+    const [sessionId] = useState(() => {
+        // Generate unique session ID once when component mounts
+        return `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    });
     const messagesEndRef = useRef(null);
 
-    const phone = new URLSearchParams(window.location.search).get("phone");
+    const teamId = new URLSearchParams(window.location.search).get("src");
 
     const scrollToBottom = () => {
         messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -27,13 +31,22 @@ export default function FeedbackBot() {
                 }
             }
 
-            const res = await fetch("https://final-innovation-feedback-bot.onrender.com/next-question", {
+            const effectiveTeamId = teamId || null;
+            const effectiveSessionId = sessionId; // Always use generated session ID
+            console.log("Sending request to server with teamId:", effectiveTeamId, "sessionId:", effectiveSessionId);
+            const res = await fetch("http://localhost:4000/next-question", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ answers, phone })
+                body: JSON.stringify({ answers, teamId: effectiveTeamId, sessionId: effectiveSessionId })
             });
 
+            if (!res.ok) {
+                throw new Error(`Server responded with status: ${res.status}`);
+            }
+
             const data = await res.json();
+            console.log("Received response:", data);
+            
             const botMsg = data.question || "Hmm... can you try that again?";
             const isEnding = botMsg.toLowerCase().includes("ending the conversation now");
 
@@ -49,6 +62,7 @@ export default function FeedbackBot() {
             }
         } catch (err) {
             console.error("Error getting next question:", err);
+            setChat((prev) => [...prev, { sender: "bot", text: "I'm having trouble connecting. Please try again in a moment." }]);
         } finally {
             setLoading(false);
         }
